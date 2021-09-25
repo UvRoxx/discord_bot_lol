@@ -53,9 +53,9 @@ class YTDLSource(discord.PCMVolumeTransformer):
 
 @bot.command(name='play_song', help='To play song')
 async def play(ctx, url):
-    if not ctx.message.author.name == "Rohan Krishna":
-        await ctx.send('NOT AUTHORISED!')
-        return
+    # if not ctx.message.author.name == "Rohan Krishna":
+    #     await ctx.send('NOT AUTHORISED!')
+    #     return
     try:
         server = ctx.message.guild
         voice_channel = server.voice_client
